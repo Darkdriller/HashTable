@@ -87,16 +87,4 @@ class Hashtable<K, V> {
         }
     }
 
-    // Method to print the contents of the hash table for debugging
-    public void printHashTable() {
-        for (int i = 0; i < numBuckets; i++) {
-            System.out.print("Bucket " + i + ": ");
-            ListNode<K, V> head = bucketArray[i];
-            while (head != null) {
-                System.out.print("[" + head.key + " = " + head.value + "] ");
-                head = head.next;
-            }
-            System.out.println();
-        }
-    }
 }
