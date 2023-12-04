@@ -28,7 +28,10 @@ public class Main {
         }
 
         // Example: Retrieving the frequency of a word
-        System.out.println("Frequency of 'paranoid': " + hashTable.get("paranoid"));
+        System.out.println("Frequency of 'avoidable': " + hashTable.get("avoidable"));
+        hashTable.remove("avoidable");
+        System.out.println("Frequency of 'avoidable' after removal: " + hashTable.get("avoidable"));
+
 
 
     }
