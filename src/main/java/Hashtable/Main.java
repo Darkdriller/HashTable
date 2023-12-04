@@ -9,7 +9,12 @@ public class Main {
         Hashtable<String, Integer> hashTable = new Hashtable<String, Integer>();
 
         // Example string (can be replaced with any text)
-        String text = "To be or not to be";
+        String text = """
+                Paranoids are not
+                paranoid because they are paranoid but
+                because they keep putting themselves
+                deliberately into paranoid avoidable
+                situations""";
 
         // Splitting the string into words and adding them to the hash table
         String[] words = text.split("\\s+");
@@ -23,7 +28,7 @@ public class Main {
         }
 
         // Example: Retrieving the frequency of a word
-        System.out.println("Frequency of 'be': " + hashTable.get("be"));
+        System.out.println("Frequency of 'paranoid': " + hashTable.get("paranoid"));
 
 
     }
